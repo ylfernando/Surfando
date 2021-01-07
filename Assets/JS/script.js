@@ -1,7 +1,3 @@
-/*$('.scroll').on('click', function(e) {
-		e.preventDefault();
-		var id = $(this).attr('href'), targetOffset = $(id).offset().top;
-		$('html', 'body').animate( {
-			scrollTop: targetOffset
-		}, 600);
-	});
+$('.li-header').on('click', function() {
+	console.log('Está funcionando!');
+});
