@@ -22,7 +22,7 @@ header a {
     max-width: 1200px!important;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .logo-header {
     width: 160px;
@@ -36,7 +36,7 @@ li a {
     text-decoration: none;
 }
 .li-header a {
-    font-size: 19px!important;
+    font-size: 18px;
     color: #38A3E0;
     font-weight: 500;
     margin: 0px 20px 0px 20px;
@@ -47,8 +47,31 @@ li a {
 	background-color: white;
 	height: 2px;
 	width: 0;
-	transition: .3s;
+    transition: .3s;
 }
 .menu nav li a:hover::after, .menu nav li a.active::after {
 	width: 100%;
 }
+.mobile-btn {
+    float: right;
+    display: none;
+}
+.btn-line {
+    border: 1px solid #103246;
+    margin-top: 10px;
+    width: 50px;
+}
+
+/*** Responsivo***/
+
+@media only screen and (max-width: 870px) {
+    .mobile-btn {
+        display: flex;
+        flex-direction: column;
+    }
+    .li-header a {
+        font-size: 17px;
+    }
+}
+ 
+
