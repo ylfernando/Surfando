@@ -1,3 +1,3 @@
-$('.li-header').on('click', function() {
-	console.log('Está funcionando!');
-});
+$('.btn-menu-mobile').on('click', function() {
+	$(this).toggleClass('active');
+})

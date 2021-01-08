@@ -52,25 +52,49 @@ li a {
 .menu nav li a:hover::after, .menu nav li a.active::after {
 	width: 100%;
 }
-.mobile-btn {
+.btn-menu-mobile {
+    display: block;
+    height: 36px;
+    width: 36px;
+    color: white;
+    margin: 20px 20px 0 0;
+    border-top: 4px solid;
     float: right;
+    position: relative;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
     display: none;
 }
-.btn-line {
-    border: 1px solid #103246;
-    margin-top: 10px;
-    width: 50px;
+.btn-menu-mobile::after, .btn-menu-mobile::before {
+    content: '';
+    display: block;
+    height: 4px;
+    margin-top: 6px;
+    background: currentColor!important;
+    position: relative;
+    transition: transform .2s ease;
 }
-
+.btn-menu-mobile.active {
+    border-top-color: transparent;
+}
+.btn-menu-mobile.active::after {
+    margin-top:0px;
+    top: 2px;
+    transform: rotate(45deg);
+}
+.btn-menu-mobile.active::before {
+    margin-top: 0px;
+    top: 6px;
+    transform: rotate(135deg);
+}
 /*** Responsivo***/
 
 @media only screen and (max-width: 870px) {
-    .mobile-btn {
-        display: flex;
-        flex-direction: column;
-    }
     .li-header a {
         font-size: 17px;
+    }
+    .btn-menu-mobile {
+        display: block!important;
     }
 }
  
