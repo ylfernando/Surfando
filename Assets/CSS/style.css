@@ -96,6 +96,34 @@ li a {
     .btn-menu-mobile {
         display: block!important;
     }
+    .ul-header {
+    	display: none;
+    	position: absolute;
+    	margin-top: 73.7px;
+    	width: 25.3%;
+    	overflow: hidden;
+    	height: auto;
+    	background-color: #256C95;
+    }
+    .ul-header {
+		left: 0px;
+		width: 100%;
+	}
+    .li-header {
+    	padding: 15px;
+    	font-size: 18px;
+    	width: 100%;
+    	border-top: 1px solid #FFF;
+    }
 }
- 
 
+@media only screen and (max-width: 550px) {
+	.ul-header {
+		left: 0px;
+		width: 100%;
+	}
+	.logo-header {
+		width: 160px;
+		height: 160px;
+	}
+}
