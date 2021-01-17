@@ -87,7 +87,32 @@ li a {
     top: 6px;
     transform: rotate(135deg);
 }
-/*** Responsivo***/
+/*** Section ***/
+
+.section {
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: #DDD;
+}
+.container-section {
+	background-color: #000;
+	height: 500px;
+	min-width: 1px;
+	width: 1200px;
+	max-width: 1200px!important;
+}
+.slide-1, .slide-2 {
+	max-width: 1200px!important;
+	max-height: 500px; 
+}
+.image-slide {
+	width: 1200px;
+	height: 500px;
+}
+/*** Responsivo ***/
 
 @media only screen and (max-width: 870px) {
     .li-header a {
